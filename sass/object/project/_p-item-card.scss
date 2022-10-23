@@ -1,0 +1,77 @@
+@use "../../foundation/colors" as color;
+@use "../../foundation/mixin" as mq;
+
+.p-item-card{
+    margin-top: 20px;
+    background-color: color.$color-card--brown;
+    color: color.$color-text--white;
+    display: flex;
+    flex-direction: column;
+    img{
+        object-fit: cover;
+        height: 70vw;
+        width: 100vw;
+    }
+    @include mq.mq(tab){
+        flex-direction: row;
+        img{
+            height: auto;
+            width: 50%;
+        }
+    };
+    &__text{
+        display: flex;
+        flex-direction: column;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        h1{
+            font-size: 2rem;
+            font-weight: bold;
+            padding-top: 30px;
+        }
+        h2{
+            font-weight: bold;
+            padding-top: 30px;
+
+        }
+        p{
+            padding-top: 15px;
+        }
+        @include mq.mq(tab){
+            padding-left: 2vw;
+            padding-right: 2vw;
+        };
+        @include mq.mq(pc){
+            padding-left: 4vw;
+            padding-right: 4vw;
+            h1{
+                font-size: 2.5vmin;
+                padding-top: 53px;
+            }
+            h2{
+                font-size: 2vmin;
+                padding-top: 47px;
+            }
+            p{
+                padding-top: 17px;
+            }
+        }
+    }
+
+    &__button{
+        color: color.$color-text--gray;
+        font-weight: bold;
+        height: 43px;
+        width: 14vw;
+        min-width: 120px;
+        max-width: 292px;
+        text-align: center;
+        align-self: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        @include mq.mq(pc){
+            height: 76px;
+            width: 15vw;
+        }
+    }
+}
