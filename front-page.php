@@ -2,7 +2,7 @@
 
 <main class="p-main">
     <div class="p-main-visual js-main-visual">
-        <img src="<?php echo esc_url( get_template_directory_uri()); ?>/image/main-visual-SP.jpg" alt="トップページ">
+        <img src="<?php echo esc_url( get_theme_file_uri()); ?>/image/main-visual-SP.webp" alt="トップページ">
         <h1><?php bloginfo('description'); ?></h1>
     </div>
 

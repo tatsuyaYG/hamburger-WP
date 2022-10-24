@@ -2,7 +2,7 @@
 
             <main class="p-main">
                 <div class="p-main-visual p-main-visual--archive-search">
-                    <img src="<?php echo esc_url( get_template_directory_uri()); ?>/image/archive-main.jpg" alt="サーチページ">
+                    <img src="<?php echo esc_url( get_theme_file_uri()); ?>/image/archive-main.webp" alt="サーチページ">
                     <h1>Search:</h1>
                     <p><?php the_search_query( ); ?></p>
                     <div class="c-background--gray p-main-visual--archive__layer"></div>

@@ -1,7 +1,7 @@
 <?php get_header( ); ?>
             <main class="p-404">
                 <div class="p-404__visual">
-                    <img src="<?php echo esc_url( get_template_directory_uri()); ?>/image/404.jpg" alt="404">
+                    <img src="<?php echo esc_url( get_theme_file_uri()); ?>/image/404.webp" alt="404">
                     <h1>404</h1>
                     <p>Page not found.</p>
                 </div>

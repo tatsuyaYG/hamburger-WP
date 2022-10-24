@@ -1,7 +1,7 @@
 <?php get_header( ); ?>
 <main class="p-main">
     <div class="p-main-visual p-main-visual--archive">
-        <img src="<?php echo esc_url( get_template_directory_uri()); ?>/image/archive-main.jpg" alt="アーカイブページ">
+        <img src="<?php echo esc_url( get_theme_file_uri()); ?>/image/archive-main.webp" alt="アーカイブページ">
         <h1>Menu:</h1>
         <p><?php single_term_title( ); ?></p>
         <div class="c-background--gray p-main-visual--archive__layer"></div>
@@ -19,6 +19,8 @@
                 the_post( ) ;
                 ?>
                 <?php get_template_part( 'template-parts/loop','post' ); ?>
+                <?php wp_link_pages(); ?>
+
             <?php endwhile; ?>
         <?php endif; ?>
 

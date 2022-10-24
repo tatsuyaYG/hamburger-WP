@@ -1,5 +1,5 @@
     <footer id="footer" class="p-footer">
-        <img src="<?php echo esc_url( get_template_directory_uri()); ?>/image/footerSP.jpg" alt="フッター">
+        <img src="<?php echo esc_url( get_theme_file_uri()); ?>/image/footerSP.webp" alt="フッター">
         <div class="p-footer__block">
             <?php wp_nav_menu(
                 array(

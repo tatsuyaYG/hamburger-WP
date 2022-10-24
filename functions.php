@@ -2,7 +2,7 @@
 
 function hamburger_setup()
 {
-    add_filter('show_admin_bar', '__return_false');   //ツールバーの非表示
+    // add_filter('show_admin_bar', '__return_false');   //ツールバーの非表示
     add_theme_support('html5', array(
         'search-form',
         'comment-form',
@@ -12,7 +12,7 @@ function hamburger_setup()
     ));
     add_theme_support('post-thumbnails'); //アイキャッチ機能の有効化
     add_theme_support('title-tag');   //ページごとのタイトル取得
-    add_theme_support('menus');   //カスタムメニューの有効化
+    add_theme_support( 'automatic-feed-links' ); //フェード(Theme Check必須)
     add_image_size('archive_thumbnail',1024,1024,true);   //画像サイズ指定
     add_image_size('main_thumbnail',1920,1080,true);   //画像サイズ指定
     register_nav_menus(array(
@@ -50,9 +50,9 @@ function hamburger_css(){
     //リセットcss読み込み
     wp_enqueue_style(
         'reset-css',
-        'https://unpkg.com/destyle.css@3.0.2/destyle.min.css',
+        get_template_directory_uri() .'/css/destyle.min.css',
         array(),
-        '1.0.0'
+        ''
     );
     //GoogleFont読み込み
     wp_enqueue_style(
@@ -61,17 +61,11 @@ function hamburger_css(){
         array(),
         '1.0.0'
     );
-    //FontAwesome読み込み
-    wp_enqueue_style(
-        'font-awesome',
-        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css',
-        array(),
-        '1.0.0'
-    );
+
     //style.css読み込み
     wp_enqueue_style(
         'hamburger-styles',
-        get_template_directory_uri() . '/css/style.css',
+        get_theme_file_uri() . '/css/style.css',
         array(),
         '1.0.0'
     );

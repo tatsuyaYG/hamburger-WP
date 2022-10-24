@@ -4,7 +4,7 @@
                     <?php if(has_post_thumbnail()): ?>
                     <?php the_post_thumbnail( 'main_thumbnail' ); ?>
                     <?php else: ?>
-                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/image/page-main.jpg" alt="">
+                    <img src="<?php echo esc_url(get_theme_file_uri()); ?>/image/page-main.webp" alt="">
                     <?php endif; ?>
                     <h1><?php the_title( ); ?></h1>
                 </div>

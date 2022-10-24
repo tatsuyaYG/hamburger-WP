@@ -2,7 +2,7 @@
 @use "../../foundation/mixin" as mq;
 
 .p-about {
-    background-image: url("../image/mapSP.jpg");
+    background-image: url("../image/mapSP.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -10,7 +10,7 @@
     position: relative;
 
     @include mq.mq(tab) {
-        background-image: url("../image/mapTab.jpg");
+        background-image: url("../image/mapTab.webp");
     }
 
     @include mq.mq(pc) {

@@ -2,7 +2,7 @@
     <?php if(has_post_thumbnail()): ?>
     <?php the_post_thumbnail( 'archive_thumbnail' ); ?>
     <?php else: ?>
-    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/image/archive-content.jpg" alt="">
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/image/archive-content.webp" alt="">
     <?php endif; ?>
     <div class="p-item-card__text">
         <h1><?php the_title(); ?></h1>

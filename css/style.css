@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p-about {
-  background-image: url("../image/mapSP.jpg");
+  background-image: url("../image/mapSP.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width:680px) {
   .p-about {
-    background-image: url("../image/mapTab.jpg");
+    background-image: url("../image/mapTab.webp");
   }
 }
 @media screen and (min-width: 1250px) {
@@ -355,11 +355,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .p-front-section--takeout {
-  background: no-repeat url("../image/takeout.jpg");
+  background: no-repeat url("../image/takeout.webp");
   background-size: cover;
 }
 .p-front-section--eatIn {
-  background: no-repeat url("../image/eatin.jpg");
+  background: no-repeat url("../image/eatin.webp");
   background-size: cover;
 }
 .p-front-section__title {
