@@ -13,7 +13,7 @@ function hamburger_setup()
     add_theme_support('post-thumbnails'); //アイキャッチ機能の有効化
     add_theme_support('title-tag');   //ページごとのタイトル取得
     add_theme_support( 'automatic-feed-links' ); //フェード(Theme Check必須)
-    add_image_size('archive_thumbnail',1024,1024,true);   //画像サイズ指定
+    add_image_size('archive_thumbnail',920,690,true);   //画像サイズ指定
     add_image_size('main_thumbnail',1920,1080,true);   //画像サイズ指定
     register_nav_menus(array(
         'footer_nav' => esc_html__('footer navigation', 'rtbread'),
@@ -28,13 +28,6 @@ add_action('after_setup_theme', 'hamburger_setup');
 function hamburger_enqueue_scripts()
 {
     wp_enqueue_script('jquery');
-    wp_enqueue_script(
-        'hamburger-main-visual',
-        get_template_directory_uri() . '/js/js-main-visual.js',
-        array(),
-        '1.0.0',
-        true
-    );
     wp_enqueue_script(
         'hamburger-menu',
         get_template_directory_uri() . '/js/js-menu.js',

@@ -5,6 +5,20 @@
     position: relative;
     text-align: center;
     transition: all 0.3s;
+    &__image{
+        background: no-repeat url("../image/main-visual-SP.webp");
+        background-position: 50% 70%;
+        background-size: cover;
+        height: 285px;
+        @include mq.mq(tab){
+            background: no-repeat url("../image/main-visual.webp");
+            background-position: center;
+            background-size: cover;
+        }
+        @include mq.mq(pc){
+            height: 530px;
+        }
+    }
         img{
         width: 100vw;
         height: 285px;
